@@ -2,6 +2,11 @@
   margin-bottom: 20px !important;
 }
 
+.mlr-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .h-500 {
   height: 500px;
 }
