@@ -1,0 +1,31 @@
+.card__art {
+  border: 1px solid black;
+  width: 80%;
+  padding: 0 10px 10px 10px;
+  position: relative;
+}
+
+.card__bookmark {
+  position: absolute;
+  top: -10px;
+  right: 20px;
+}
+
+.card__show-answer {
+  cursor: pointer;
+  list-style: none;
+  border: 0.5px solid black;
+  border-radius: 5px;
+  padding: 3px;
+  width: 50%;
+}
+
+.card__list {
+  list-style: none;
+}
+
+.card__tag {
+  border: 0.5px solid black;
+  border-radius: 10px;
+  padding: 5px;
+}

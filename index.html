@@ -8,32 +8,37 @@
     <link rel="stylesheet" href="./styles/index.css" />
   </head>
   <body class="app-grid">
-    <header>
-      <h1>QUIZ-APP</h1>
-    </header>
+    <h1 class="m-0">QUIZ-APP</h1>
     <main class="app-grid__scrollarea h-100vh">
-      <article class="mlr-auto">
+      <article class="mlr-auto mt-40 card__art">
         <h2>Question:</h2>
-        <button>"image bookmark"</button>
+        <button class="card__bookmark">
+          <img
+            src="./images/bookmark-regular.svg"
+            alt=""
+            width="30"
+            height="30"
+          />
+        </button>
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo
           consectetur est placeat sit minima magnam officia provident eaque
           nostrum ullam a alias harum illum enim, velit architecto tempora
           necessitatibus amet.
         </p>
-        <button>show answer</button>
-        <!-- answer text part -->
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt
-          corrupti ut iusto illo hic repellat nisi eaque aliquam sed ullam,
-          beatae, atque officiis dolores, eum earum culpa explicabo similique
-          repudiandae.
-        </p>
-        <ul>
-          <li>tag 1</li>
-          <li>tag 2</li>
-          <li>tag 3</li>
-          <li>tag 4</li>
+        <details>
+          <summary class="card__show-answer">show answer</summary>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque,
+            aliquid ea. Inventore illo rem optio ipsa, quas, at qui, eligendi
+            nemo odit error rerum reprehenderit omnis id cum. Corrupti, libero!
+          </p>
+        </details>
+        <ul class="flex flex--space-around pl-0 card__list">
+          <li class="card__tag">tag 1</li>
+          <li class="card__tag">tag 2</li>
+          <li class="card__tag">tag 3</li>
+          <li class="card__tag">tag 4</li>
         </ul>
       </article>
     </main>
