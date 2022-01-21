@@ -7,46 +7,73 @@
     <title>Create</title>
     <link rel="stylesheet" href="./styles/index.css" />
   </head>
-  <body class="app-grid">
+  <body class="app-grid m-0">
     <header>
       <h1 id="create-question">CREATE</h1>
     </header>
     <main class="app-grid__scrollarea h-100vh">
       <form autocomplete="off" aria-labelledby="#create-question">
-        <label
-          >Question:
-          <textarea
-            id="question"
-            cols="30"
-            rows="5"
-            placeholder="add question"
-            required
-          ></textarea>
-        </label>
-        <label
-          >Answer:
-          <textarea
-            id="question"
-            cols="30"
-            rows="5"
-            placeholder="add answer"
-            required
-          ></textarea>
-        </label>
-        <label
-          >Tags:
-          <input type="text" placeholder="Add tags divided by comma" required />
-        </label>
-        <input type="submit" value="submit" />
+        <label for="question" class="form__label">Question:</label>
+        <textarea
+          class="form__input"
+          id="question"
+          cols="30"
+          rows="5"
+          placeholder="add question"
+          required
+        ></textarea>
+        <label for="answer" class="form__label">Answer:</label>
+        <textarea
+          class="form__input"
+          id="answer"
+          rows="5"
+          placeholder="add answer"
+          required
+        ></textarea>
+        <label for="tags" class="form__label">Tags:</label>
+        <input
+          class="form__input form__input--block"
+          id="tags"
+          type="text"
+          placeholder="Add tags divided by comma"
+          required
+        />
+        <input class="mlr-auto form--submit" type="submit" value="submit" />
       </form>
     </main>
-    <nav>
-      <ul>
-        <li>"image home"</li>
-        <li>"image bookmark"</li>
-        <li>"image "create"</li>
-        <li>"image profile"</li>
-      </ul>
+    <nav class="nav__container">
+      <a class="nav__icon nav__icon--active" href="#"
+        ><img
+          class="nav__picture"
+          src="./images/home-solid.svg"
+          alt=""
+          width="40"
+          height="40"
+      /></a>
+      <a class="nav__icon" href="#"
+        ><img
+          class="nav__picture"
+          src="./images/bookmark-regular.svg"
+          alt=""
+          width="40"
+          height="40"
+      /></a>
+      <a class="nav__icon" href="#"
+        ><img
+          class="nav__picture"
+          src="./images/align-center-solid.svg"
+          alt=""
+          width="40"
+          height="40"
+      /></a>
+      <a class="nav__icon" href="#"
+        ><img
+          class="nav__picture"
+          src="./images/user-circle-solid.svg"
+          alt=""
+          width="40"
+          height="40"
+      /></a>
     </nav>
   </body>
 </html>

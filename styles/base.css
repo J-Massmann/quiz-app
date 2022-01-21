@@ -7,5 +7,12 @@
 h1 {
   border-bottom: 1px solid black;
   text-align: center;
-  margin: auto 0 0 0;
+  margin: 0;
+  padding-top: 10px;
+  background-color: var(--color-satured-black);
+  color: cornsilk;
+}
+
+body {
+  background-color: var(--color-bright-gray);
 }

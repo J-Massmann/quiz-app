@@ -1,12 +1,19 @@
 .nav__container {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
   position: sticky;
   bottom: 0;
   z-index: 1;
+  background-color: lightgray;
 }
 
 .nav__icon {
   border: 1px solid black;
   position: relative;
+}
+
+.nav__icon--active {
+  background-color: gray;
 }
 
 .nav__picture {

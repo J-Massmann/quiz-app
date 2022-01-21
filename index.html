@@ -10,9 +10,41 @@
   <body class="app-grid m-0">
     <h1>QUIZ-APP</h1>
     <main class="app-grid__scrollarea h-100vh">
-      <article class="mlr-auto mt-40 card__art">
+      <article class="mlr-auto mt-40 card__container">
         <h2>Question:</h2>
-        <button class="card__bookmark">
+        <button class="card--bookmark">
+          <img
+            src="./images/bookmark-regular.svg"
+            alt=""
+            width="30"
+            height="30"
+          />
+        </button>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo
+          consectetur est placeat sit minima magnam officia provident eaque
+          nostrum ullam a alias harum illum enim, velit architecto tempora
+          necessitatibus amet.
+        </p>
+        <details>
+          <summary class="card__show-answer mlr-auto">show answer</summary>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque,
+            aliquid ea. Inventore illo rem optio ipsa, quas, at qui, eligendi
+            nemo odit error rerum reprehenderit omnis id cum. Corrupti, libero!
+          </p>
+        </details>
+        <ul class="card__list">
+          <li class="card__tag">tag 1</li>
+          <li class="card__tag">tag 2</li>
+          <li class="card__tag">tag 3</li>
+          <li class="card__tag">tag 4</li>
+        </ul>
+      </article>
+
+      <article class="mlr-auto mt-40 card__container">
+        <h2>Question:</h2>
+        <button class="card--bookmark">
           <img
             src="./images/bookmark-regular.svg"
             alt=""
@@ -34,7 +66,7 @@
             nemo odit error rerum reprehenderit omnis id cum. Corrupti, libero!
           </p>
         </details>
-        <ul class="flex flex--space-around pl-0 card__list">
+        <ul class="card__list">
           <li class="card__tag">tag 1</li>
           <li class="card__tag">tag 2</li>
           <li class="card__tag">tag 3</li>
@@ -42,8 +74,8 @@
         </ul>
       </article>
     </main>
-    <nav class="grid grid__cols-4 nav__container">
-      <a class="nav__icon" href="#"
+    <nav class="nav__container">
+      <a class="nav__icon nav__icon--active" href="#"
         ><img
           class="nav__picture"
           src="./images/home-solid.svg"

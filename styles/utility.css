@@ -15,10 +15,6 @@
   margin-top: 40px !important;
 }
 
-.pl-0 {
-  padding-left: 0;
-}
-
 .h-500 {
   height: 500px;
 }
@@ -41,20 +37,4 @@
 
 .bg-hotpink {
   background-color: hotpink;
-}
-
-.flex {
-  display: flex;
-}
-
-.flex--space-around {
-  justify-content: space-around;
-}
-
-.grid {
-  display: grid;
-}
-
-.grid__cols-4 {
-  grid-template-columns: repeat(4, 25%);
 }
