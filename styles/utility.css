@@ -1,3 +1,7 @@
+.m-0 {
+  margin: 0;
+}
+
 .mb-20 {
   margin-bottom: 20px !important;
 }
@@ -7,12 +11,29 @@
   margin-right: auto;
 }
 
+.mlr-0 {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.mt-40 {
+  margin-top: 40px !important;
+}
+
 .h-500 {
   height: 500px;
 }
 
 .h-100vh {
   height: 100vh;
+}
+
+.h-48 {
+  height: 48px;
+}
+
+.w-80 {
+  width: 80%;
 }
 
 .bg-blue {

@@ -1,0 +1,26 @@
+.nav__container {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  position: sticky;
+  bottom: 0;
+  z-index: 1;
+  background-color: lightgray;
+}
+
+.nav__icon {
+  border: 1px solid black;
+  position: relative;
+}
+
+.nav__icon--active {
+  background-color: gray;
+}
+
+.nav__picture {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+}

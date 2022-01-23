@@ -1,0 +1,28 @@
+<form autocomplete="off" aria-labelledby="#create-question">
+  <label for="question" class="form__label">Question:</label>
+  <textarea
+    class="form__input"
+    id="question"
+    cols="30"
+    rows="5"
+    placeholder="add question"
+    required
+  ></textarea>
+  <label for="answer" class="form__label">Answer:</label>
+  <textarea
+    class="form__input"
+    id="answer"
+    rows="5"
+    placeholder="add answer"
+    required
+  ></textarea>
+  <label for="tags" class="form__label">Tags:</label>
+  <input
+    class="form__input form__input--block"
+    id="tags"
+    type="text"
+    placeholder="Add tags divided by comma"
+    required
+  />
+  <input class="mlr-auto form--submit" type="submit" value="submit" />
+</form>
