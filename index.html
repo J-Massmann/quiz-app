@@ -6,14 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz-App</title>
     <link rel="stylesheet" href="./styles/index.css" />
+    <script defer src="./styles/components/index.js"></script>
   </head>
   <body class="app-grid m-0">
     <h1>QUIZ-APP</h1>
     <main class="app-grid__scrollarea h-100vh">
       <article class="mlr-auto mt-40 card__container">
         <h2>Question:</h2>
-        <button class="button__bookmark">
+        <button onclick="changeImg()" class="button__bookmark">
           <img
+            data-js="button-bookmark"
             src="./images/bookmark-regular.svg"
             alt=""
             width="30"
