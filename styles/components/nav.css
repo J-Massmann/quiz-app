@@ -1,8 +1,11 @@
 .nav__container {
   display: grid;
   grid-template-columns: repeat(4, 25%);
-  position: sticky;
+  position: fixed;
+  height: 48px;
   bottom: 0;
+  left: 0;
+  right: 0;
   z-index: 1;
   background-color: lightgray;
 }
