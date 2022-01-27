@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bookmarks</title>
     <link rel="stylesheet" href="./styles/index.css" />
+    <script defer src="./styles/components/index.js"></script>
   </head>
   <body class="app-grid m-0">
     <header>
@@ -14,8 +15,9 @@
     <main class="app-grid__scrollarea h-100vh">
       <article class="mlr-auto mt-40 card__container">
         <h2>Question:</h2>
-        <button class="card--bookmark">
+        <button data-js="button-bookmark" class="button__bookmark">
           <img
+            data-js="button-image"
             src="./images/bookmark-regular.svg"
             alt=""
             width="30"
@@ -46,8 +48,9 @@
 
       <article class="mlr-auto mt-40 card__container">
         <h2>Question:</h2>
-        <button class="card--bookmark">
+        <button data-js="button-bookmark" class="button__bookmark">
           <img
+            data-js="button-image"
             src="./images/bookmark-regular.svg"
             alt=""
             width="30"
@@ -68,6 +71,13 @@
             nemo odit error rerum reprehenderit omnis id cum. Corrupti, libero!
           </p>
         </details>
+        <ul class="card__list">
+          <li class="card__tag">tag 1</li>
+          <li class="card__tag">tag 2</li>
+          <li class="card__tag">tag 3</li>
+          <li class="card__tag">tag 4</li>
+        </ul>
+      </article>
     </main>
     <nav class="nav__container">
       <a class="nav__icon" href="index.html"
