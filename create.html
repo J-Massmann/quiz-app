@@ -13,7 +13,11 @@
       <h1 id="create-question">CREATE</h1>
     </header>
     <main class="app-grid__scrollarea h-100vh">
-      <form autocomplete="off" aria-labelledby="#create-question">
+      <form
+        class="form__container ml-10"
+        autocomplete="off"
+        aria-labelledby="#create-question"
+      >
         <label for="question" class="form__label">Question:</label>
         <textarea
           class="form__input"
@@ -24,7 +28,9 @@
           placeholder="add question"
           required
         ></textarea>
-        <output data-js="counter" class="form--counter">200</output>
+        <p class="form--counter">
+          <output data-js="counter">200</output> letters left
+        </p>
         <label for="answer" class="form__label">Answer:</label>
         <textarea
           class="form__input"
@@ -33,6 +39,9 @@
           placeholder="add answer"
           required
         ></textarea>
+        <p class="form--counter">
+          <output data-js="counter">200</output> letters left
+        </p>
         <label for="tags" class="form__label">Tags:</label>
         <input
           class="form__input form__input--block"

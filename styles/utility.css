@@ -6,6 +6,10 @@
   margin-bottom: 20px !important;
 }
 
+.ml-10 {
+  margin-left: 10px;
+}
+
 .mlr-auto {
   margin-left: auto;
   margin-right: auto;
