@@ -1,18 +1,15 @@
-.form__container {
-  display: grid;
-  grid-template-areas: 1 9;
-}
-
 .form__label {
   margin-top: 15px;
   margin-bottom: 5px;
   font-size: 1.5rem;
   font-weight: 700;
+  display: block;
 }
 
 .form__input {
   background-color: var(--color-light-gray);
   width: 80%;
+  display: block;
 }
 
 .form--submit {
@@ -24,9 +21,11 @@
   background-color: var(--color-slightgray);
   cursor: pointer;
   margin-top: 20px;
+  display: block;
 }
 
 .form--counter {
   color: gray;
   margin-top: 5px;
+  display: block;
 }

@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz-App</title>
     <link rel="stylesheet" href="./styles/index.css" />
-    <script defer src="./styles/components/index.js"></script>
+    <script type="module" defer src="./styles/index.js"></script>
   </head>
   <body class="app-grid m-0">
     <h1>QUIZ-APP</h1>
     <main class="app-grid__scrollarea h-100vh">
-      <article class="mlr-auto mt-40 card__container">
+      <article class="mlr-auto mt-40 card__container" data-js="card">
         <h2>Question:</h2>
         <button data-js="button-bookmark" class="button--bookmark">
           <img
@@ -44,7 +44,7 @@
         </ul>
       </article>
 
-      <article class="mlr-auto mt-40 card__container">
+      <article class="mlr-auto mt-40 card__container" data-js="card">
         <h2>Question:</h2>
         <button data-js="button-bookmark" class="button--bookmark">
           <img
