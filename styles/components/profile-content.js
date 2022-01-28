@@ -1,4 +1,4 @@
-import html from 'profile-content.html';
+import html from './profile-content.html';
 
 export default {
   title: 'Components/profile-content',

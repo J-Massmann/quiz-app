@@ -10,16 +10,6 @@
   margin-bottom: 20px;
 }
 
-.card__show-answer {
-  cursor: pointer;
-  list-style: none;
-  border: 0.5px solid black;
-  border-radius: 5px;
-  padding: 3px 9px 3px 9px;
-  width: fit-content;
-  background-color: var(--color-slightgray);
-}
-
 .card__list {
   list-style: none;
   display: flex;
@@ -34,4 +24,8 @@
   padding: 5px;
   width: fit-content;
   background: var(--color-slightgray);
+}
+
+.card__answer-hide {
+  display: none;
 }

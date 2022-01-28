@@ -1,13 +1,13 @@
 <article class="mlr-auto mt-40 card__container">
   <h2>Question:</h2>
-  <button class="card--bookmark">
-    <img src="#" alt="" width="30" height="30" />
+  <button data-js="button-bookmark" class="button__bookmark">
+    <img data-js="button-image" src="#" alt="" width="30" height="30" />
   </button>
   <p>text question</p>
-  <details>
-    <summary class="card__show-answer mlr-auto">show answer</summary>
-    <p>text answer</p>
-  </details>
+  <button class="button--show-answer mlr-auto" data-js="show-answer">
+    show answer
+  </button>
+  <p class="card__answer-hide" data-js="hide-text">text answer</p>
   <ul class="flex flex--space-around pl-0 card__list">
     <li class="card__tag">tag 1</li>
     <li class="card__tag">tag 2</li>
