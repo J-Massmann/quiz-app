@@ -13,3 +13,7 @@ const allFormElements = document.querySelectorAll('[data-js="form"]');
 allFormElements.forEach(allFormElements => {
   Form(allFormElements);
 });
+
+import Nav from '../js/Navigation.js';
+
+Nav();

@@ -51,3 +51,7 @@
 .bg-hotpink {
   background-color: hotpink;
 }
+
+.hidden {
+  display: none;
+}
