@@ -1,7 +1,7 @@
-import "./button.css";
+import './button.css';
 
 export default {
-  title: "Components/button",
+  title: 'Components/button',
 };
 
 export const bookmark = () => `<button class="button--bookmark">click</button>`;
