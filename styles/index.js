@@ -17,3 +17,7 @@ allFormElements.forEach(allFormElements => {
 import Nav from '../js/Navigation.js';
 
 Nav();
+
+import Heading from '../js/Heading.js';
+
+Heading();

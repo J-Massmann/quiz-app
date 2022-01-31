@@ -9,8 +9,8 @@
     <script type="module" defer src="./styles/index.js"></script>
   </head>
   <body class="app-grid m-0">
-    <h1>QUIZ-APP</h1>
-    <main class="app-grid__scrollarea h-100vh hidden" data-js="home-page">
+    <h1 data-js="header">QUIZ-APP</h1>
+    <main class="app-grid__scrollarea h-100vh hidden" data-page="home">
       <article class="mlr-auto mt-40 card__container" data-js="card">
         <h2>Question:</h2>
         <button data-js="button-bookmark" class="button--bookmark">
@@ -78,7 +78,7 @@
       </article>
     </main>
 
-    <main class="app-grid__scrollarea h-100vh hidden" data-js="bookmark-page">
+    <main class="app-grid__scrollarea h-100vh hidden" data-page="bookmark">
       <article class="mlr-auto mt-40 card__container" data-js="card">
         <h2>Question:</h2>
         <button data-js="button-bookmark" class="button--bookmark">
@@ -146,7 +146,7 @@
       </article>
     </main>
 
-    <main class="app-grid__scrollarea h-100vh hidden" data-js="create-page">
+    <main class="app-grid__scrollarea h-100vh hidden" data-page="create">
       <form class="ml-10" autocomplete="off" aria-labelledby="#create-question">
         <section data-js="form">
           <label for="question" class="form__label">Question:</label>
@@ -193,7 +193,7 @@
 
     <main
       class="app-grid__scrollarea h-100vh w-80 mlr-auto"
-      data-js="profile-page"
+      data-page="profile"
     >
       <figure class="profile-content__user mlr-0">
         <img
@@ -222,7 +222,7 @@
     </main>
 
     <nav class="nav__container" data-js="navigation">
-      <button class="nav__icon" data-js="home">
+      <button class="nav__icon" data-nav="home">
         <img
           class="nav__picture"
           src="./images/home-solid.svg"
@@ -231,7 +231,7 @@
           height="40"
         />
       </button>
-      <button class="nav__icon" data-js="bookmark">
+      <button class="nav__icon" data-nav="bookmark">
         <img
           class="nav__picture"
           src="./images/bookmark-regular.svg"
@@ -240,7 +240,7 @@
           height="40"
         />
       </button>
-      <button class="nav__icon" data-js="create">
+      <button class="nav__icon" data-nav="create">
         <img
           class="nav__picture"
           src="./images/align-center-solid.svg"
@@ -249,7 +249,7 @@
           height="40"
         />
       </button>
-      <button class="nav__icon nav__icon--active" data-js="profile">
+      <button class="nav__icon nav__icon--active" data-nav="profile">
         <img
           class="nav__picture"
           src="./images/user-circle-solid.svg"
