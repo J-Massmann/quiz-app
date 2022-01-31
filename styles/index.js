@@ -21,3 +21,7 @@ Nav();
 import Heading from '../js/Heading.js';
 
 Heading();
+
+import Logout from '../js/Profile.js';
+
+Logout();
