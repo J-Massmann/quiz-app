@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz-App</title>
     <link rel="stylesheet" href="./styles/index.css" />
-    <script defer src="./styles/components/index.js"></script>
+    <script type="module" defer src="./styles/index.js"></script>
   </head>
   <body class="app-grid m-0">
     <h1>QUIZ-APP</h1>
-    <main class="app-grid__scrollarea h-100vh">
-      <article class="mlr-auto mt-40 card__container">
+    <main class="app-grid__scrollarea h-100vh hidden" data-js="home-page">
+      <article class="mlr-auto mt-40 card__container" data-js="card">
         <h2>Question:</h2>
         <button data-js="button-bookmark" class="button--bookmark">
           <img
@@ -44,7 +44,7 @@
         </ul>
       </article>
 
-      <article class="mlr-auto mt-40 card__container">
+      <article class="mlr-auto mt-40 card__container" data-js="card">
         <h2>Question:</h2>
         <button data-js="button-bookmark" class="button--bookmark">
           <img
@@ -77,39 +77,187 @@
         </ul>
       </article>
     </main>
-    <nav class="nav__container">
-      <a class="nav__icon nav__icon--active" href="index.html"
-        ><img
+
+    <main class="app-grid__scrollarea h-100vh hidden" data-js="bookmark-page">
+      <article class="mlr-auto mt-40 card__container" data-js="card">
+        <h2>Question:</h2>
+        <button data-js="button-bookmark" class="button--bookmark">
+          <img
+            data-js="button-image"
+            src="./images/bookmark-regular.svg"
+            alt=""
+            width="30"
+            height="30"
+          />
+        </button>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo
+          consectetur est placeat sit minima magnam officia provident eaque
+          nostrum ullam a alias harum illum enim, velit architecto tempora
+          necessitatibus amet.
+        </p>
+        <button class="button--show-answer mlr-auto" data-js="show-answer">
+          show answer
+        </button>
+        <p class="card__answer-hide" data-js="hide-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque,
+          aliquid ea. Inventore illo rem optio ipsa, quas, at qui, eligendi nemo
+          odit error rerum reprehenderit omnis id cum. Corrupti, libero!
+        </p>
+        <ul class="card__list">
+          <li class="card__tag">tag 1</li>
+          <li class="card__tag">tag 2</li>
+          <li class="card__tag">tag 3</li>
+          <li class="card__tag">tag 4</li>
+        </ul>
+      </article>
+
+      <article class="mlr-auto mt-40 card__container" data-js="card">
+        <h2>Question:</h2>
+        <button data-js="button-bookmark" class="button--bookmark">
+          <img
+            data-js="button-image"
+            src="./images/bookmark-regular.svg"
+            alt=""
+            width="30"
+            height="30"
+          />
+        </button>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo
+          consectetur est placeat sit minima magnam officia provident eaque
+          nostrum ullam a alias harum illum enim, velit architecto tempora
+          necessitatibus amet.
+        </p>
+        <button class="button--show-answer mlr-auto" data-js="show-answer">
+          show answer
+        </button>
+        <p class="card__answer-hide" data-js="hide-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque,
+          aliquid ea. Inventore illo rem optio ipsa, quas, at qui, eligendi nemo
+          odit error rerum reprehenderit omnis id cum. Corrupti, libero!
+        </p>
+        <ul class="card__list">
+          <li class="card__tag">tag 1</li>
+          <li class="card__tag">tag 2</li>
+          <li class="card__tag">tag 3</li>
+          <li class="card__tag">tag 4</li>
+        </ul>
+      </article>
+    </main>
+
+    <main class="app-grid__scrollarea h-100vh hidden" data-js="create-page">
+      <form class="ml-10" autocomplete="off" aria-labelledby="#create-question">
+        <section data-js="form">
+          <label for="question" class="form__label">Question:</label>
+          <textarea
+            maxlength="200"
+            class="form__input"
+            data-js="textarea-User"
+            id="question"
+            cols="30"
+            rows="5"
+            placeholder="add question"
+            required
+          ></textarea>
+          <p class="form--counter">
+            <output data-js="counter">200</output> letters left
+          </p>
+        </section>
+        <section data-js="form">
+          <label for="answer" class="form__label">Answer:</label>
+          <textarea
+            maxlength="200"
+            class="form__input"
+            data-js="textarea-User"
+            id="answer"
+            rows="5"
+            placeholder="add answer"
+            required
+          ></textarea>
+          <p class="form--counter">
+            <output data-js="counter">200</output> letters left
+          </p>
+        </section>
+        <label for="tags" class="form__label">Tags:</label>
+        <input
+          class="form__input form__input--block"
+          id="tags"
+          type="text"
+          placeholder="Add tags divided by comma"
+          required
+        />
+        <input class="mlr-auto form--submit" type="submit" value="submit" />
+      </form>
+    </main>
+
+    <main
+      class="app-grid__scrollarea h-100vh w-80 mlr-auto"
+      data-js="profile-page"
+    >
+      <figure class="profile-content__user mlr-0">
+        <img
+          class="profile-content__profile-picture"
+          src="https://source.unsplash.com/random/300x300"
+          alt="profile picture"
+          width="150"
+          height="150"
+        />
+        <figcaption class="profile-content__profile-name">Name</figcaption>
+      </figure>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro quam
+        facilis quas vel iure nobis adipisci accusantium modi saepe maiores.
+        Voluptatum perspiciatis doloremque vitae at nemo iste repellat excepturi
+        porro!
+      </p>
+      <h2 class="profile-content--headings">skills</h2>
+      <ul class="profile-content__list">
+        <li class="profile-content__tag">tag1</li>
+        <li class="profile-content__tag">tag2</li>
+        <li class="profile-content__tag">tag3</li>
+        <li class="profile-content__tag">tag3</li>
+      </ul>
+      <button class="profile-content--logout mlr-auto">LOGOUT</button>
+    </main>
+
+    <nav class="nav__container" data-js="navigation">
+      <a class="nav__icon" data-js="home">
+        <img
           class="nav__picture"
           src="./images/home-solid.svg"
           alt=""
           width="40"
           height="40"
-      /></a>
-      <a class="nav__icon" href="bookmarks.html"
-        ><img
+        />
+      </a>
+      <a class="nav__icon" data-js="bookmark">
+        <img
           class="nav__picture"
           src="./images/bookmark-regular.svg"
           alt=""
           width="40"
           height="40"
-      /></a>
-      <a class="nav__icon" href="create.html"
-        ><img
+        />
+      </a>
+      <a class="nav__icon" data-js="create">
+        <img
           class="nav__picture"
           src="./images/align-center-solid.svg"
           alt=""
           width="40"
           height="40"
-      /></a>
-      <a class="nav__icon" href="profile.html"
-        ><img
+        />
+      </a>
+      <a class="nav__icon nav__icon--active" data-js="profile">
+        <img
           class="nav__picture"
           src="./images/user-circle-solid.svg"
           alt=""
           width="40"
           height="40"
-      /></a>
+        />
+      </a>
     </nav>
   </body>
 </html>

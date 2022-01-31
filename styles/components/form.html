@@ -1,21 +1,37 @@
-<form autocomplete="off" aria-labelledby="#create-question">
-  <label for="question" class="form__label">Question:</label>
-  <textarea
-    class="form__input"
-    id="question"
-    cols="30"
-    rows="5"
-    placeholder="add question"
-    required
-  ></textarea>
+<form
+  class="form__container ml-10"
+  autocomplete="off"
+  aria-labelledby="#create-question"
+>
+  <section data-js="form">
+    <label for="question" class="form__label">Question:</label>
+    <textarea
+      maxlength="200"
+      class="form__input"
+      data-js="textarea-User"
+      id="question"
+      cols="30"
+      rows="5"
+      placeholder="add question"
+      required
+    ></textarea>
+    <p class="form--counter">
+      <output data-js="counter">200</output> letters left
+    </p>
+  </section>
   <label for="answer" class="form__label">Answer:</label>
   <textarea
+    maxlength="200"
     class="form__input"
+    data-js="textarea-User"
     id="answer"
     rows="5"
     placeholder="add answer"
     required
   ></textarea>
+  <p class="form--counter">
+    <output data-js="counter">200</output> letters left
+  </p>
   <label for="tags" class="form__label">Tags:</label>
   <input
     class="form__input form__input--block"

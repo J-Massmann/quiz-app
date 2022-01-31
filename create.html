@@ -6,42 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Create</title>
     <link rel="stylesheet" href="./styles/index.css" />
-    <script defer src="./styles/components/create.js"></script>
+    <script type="module" defer src="./styles/index.js"></script>
   </head>
   <body class="app-grid m-0">
     <header>
       <h1 id="create-question">CREATE</h1>
     </header>
     <main class="app-grid__scrollarea h-100vh">
-      <form
-        class="form__container ml-10"
-        autocomplete="off"
-        aria-labelledby="#create-question"
-      >
-        <label for="question" class="form__label">Question:</label>
-        <textarea
-          class="form__input"
-          data-js="textarea-Question"
-          id="question"
-          cols="30"
-          rows="5"
-          placeholder="add question"
-          required
-        ></textarea>
-        <p class="form--counter">
-          <output data-js="counter">200</output> letters left
-        </p>
-        <label for="answer" class="form__label">Answer:</label>
-        <textarea
-          class="form__input"
-          id="answer"
-          rows="5"
-          placeholder="add answer"
-          required
-        ></textarea>
-        <p class="form--counter">
-          <output data-js="counter">200</output> letters left
-        </p>
+      <form class="ml-10" autocomplete="off" aria-labelledby="#create-question">
+        <section data-js="form">
+          <label for="question" class="form__label">Question:</label>
+          <textarea
+            maxlength="200"
+            class="form__input"
+            data-js="textarea-User"
+            id="question"
+            cols="30"
+            rows="5"
+            placeholder="add question"
+            required
+          ></textarea>
+          <p class="form--counter">
+            <output data-js="counter">200</output> letters left
+          </p>
+        </section>
+        <section data-js="form">
+          <label for="answer" class="form__label">Answer:</label>
+          <textarea
+            maxlength="200"
+            class="form__input"
+            data-js="textarea-User"
+            id="answer"
+            rows="5"
+            placeholder="add answer"
+            required
+          ></textarea>
+          <p class="form--counter">
+            <output data-js="counter">200</output> letters left
+          </p>
+        </section>
         <label for="tags" class="form__label">Tags:</label>
         <input
           class="form__input form__input--block"
