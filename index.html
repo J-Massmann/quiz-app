@@ -8,12 +8,15 @@
     <link rel="stylesheet" href="./styles/index.css" />
     <script type="module" defer src="./styles/index.js"></script>
   </head>
-  <body class="app-grid m-0">
-    <h1>QUIZ-APP</h1>
-    <main class="app-grid__scrollarea h-100vh hidden" data-js="home-page">
-      <article class="mlr-auto mt-40 card__container" data-js="card">
+  <body class=".App-grid m-0">
+    <h1 data-js="header">QUIZ-APP</h1>
+
+    <!-- home_page -->
+
+    <main class=".App-grid__scrollarea h-100vh hidden" data-page="home">
+      <article class="mlr-auto mt-40 Card__container" data-js="card">
         <h2>Question:</h2>
-        <button data-js="button-bookmark" class="button--bookmark">
+        <button data-js="button-bookmark" class="Button--bookmark">
           <img
             data-js="button-image"
             src="./images/bookmark-regular.svg"
@@ -28,25 +31,25 @@
           nostrum ullam a alias harum illum enim, velit architecto tempora
           necessitatibus amet.
         </p>
-        <button class="button--show-answer mlr-auto" data-js="show-answer">
+        <button class="Button--show-answer mlr-auto" data-js="show-answer">
           show answer
         </button>
-        <p class="card__answer-hide" data-js="hide-text">
+        <p class="Card__answer-hide" data-js="hide-text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque,
           aliquid ea. Inventore illo rem optio ipsa, quas, at qui, eligendi nemo
           odit error rerum reprehenderit omnis id cum. Corrupti, libero!
         </p>
-        <ul class="card__list">
-          <li class="card__tag">tag 1</li>
-          <li class="card__tag">tag 2</li>
-          <li class="card__tag">tag 3</li>
-          <li class="card__tag">tag 4</li>
+        <ul class="Card__list">
+          <li class="Card__tag">tag 1</li>
+          <li class="Card__tag">tag 2</li>
+          <li class="Card__tag">tag 3</li>
+          <li class="Card__tag">tag 4</li>
         </ul>
       </article>
 
-      <article class="mlr-auto mt-40 card__container" data-js="card">
+      <article class="mlr-auto mt-40 Card__container" data-js="card">
         <h2>Question:</h2>
-        <button data-js="button-bookmark" class="button--bookmark">
+        <button data-js="button-bookmark" class="Button--bookmark">
           <img
             data-js="button-image"
             src="./images/bookmark-regular.svg"
@@ -61,98 +64,102 @@
           nostrum ullam a alias harum illum enim, velit architecto tempora
           necessitatibus amet.
         </p>
-        <button class="button--show-answer mlr-auto" data-js="show-answer">
+        <button class="Button--show-answer mlr-auto" data-js="show-answer">
           show answer
         </button>
-        <p class="card__answer-hide" data-js="hide-text">
+        <p class="Card__answer-hide" data-js="hide-text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque,
           aliquid ea. Inventore illo rem optio ipsa, quas, at qui, eligendi nemo
           odit error rerum reprehenderit omnis id cum. Corrupti, libero!
         </p>
-        <ul class="card__list">
-          <li class="card__tag">tag 1</li>
-          <li class="card__tag">tag 2</li>
-          <li class="card__tag">tag 3</li>
-          <li class="card__tag">tag 4</li>
-        </ul>
-      </article>
-    </main>
-
-    <main class="app-grid__scrollarea h-100vh hidden" data-js="bookmark-page">
-      <article class="mlr-auto mt-40 card__container" data-js="card">
-        <h2>Question:</h2>
-        <button data-js="button-bookmark" class="button--bookmark">
-          <img
-            data-js="button-image"
-            src="./images/bookmark-regular.svg"
-            alt=""
-            width="30"
-            height="30"
-          />
-        </button>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo
-          consectetur est placeat sit minima magnam officia provident eaque
-          nostrum ullam a alias harum illum enim, velit architecto tempora
-          necessitatibus amet.
-        </p>
-        <button class="button--show-answer mlr-auto" data-js="show-answer">
-          show answer
-        </button>
-        <p class="card__answer-hide" data-js="hide-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque,
-          aliquid ea. Inventore illo rem optio ipsa, quas, at qui, eligendi nemo
-          odit error rerum reprehenderit omnis id cum. Corrupti, libero!
-        </p>
-        <ul class="card__list">
-          <li class="card__tag">tag 1</li>
-          <li class="card__tag">tag 2</li>
-          <li class="card__tag">tag 3</li>
-          <li class="card__tag">tag 4</li>
-        </ul>
-      </article>
-
-      <article class="mlr-auto mt-40 card__container" data-js="card">
-        <h2>Question:</h2>
-        <button data-js="button-bookmark" class="button--bookmark">
-          <img
-            data-js="button-image"
-            src="./images/bookmark-regular.svg"
-            alt=""
-            width="30"
-            height="30"
-          />
-        </button>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo
-          consectetur est placeat sit minima magnam officia provident eaque
-          nostrum ullam a alias harum illum enim, velit architecto tempora
-          necessitatibus amet.
-        </p>
-        <button class="button--show-answer mlr-auto" data-js="show-answer">
-          show answer
-        </button>
-        <p class="card__answer-hide" data-js="hide-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque,
-          aliquid ea. Inventore illo rem optio ipsa, quas, at qui, eligendi nemo
-          odit error rerum reprehenderit omnis id cum. Corrupti, libero!
-        </p>
-        <ul class="card__list">
-          <li class="card__tag">tag 1</li>
-          <li class="card__tag">tag 2</li>
-          <li class="card__tag">tag 3</li>
-          <li class="card__tag">tag 4</li>
+        <ul class="Card__list">
+          <li class="Card__tag">tag 1</li>
+          <li class="Card__tag">tag 2</li>
+          <li class="Card__tag">tag 3</li>
+          <li class="Card__tag">tag 4</li>
         </ul>
       </article>
     </main>
 
-    <main class="app-grid__scrollarea h-100vh hidden" data-js="create-page">
+    <!-- bookmark_page -->
+
+    <main class=".App-grid__scrollarea h-100vh hidden" data-page="bookmark">
+      <article class="mlr-auto mt-40 Card__container" data-js="card">
+        <h2>Question:</h2>
+        <button data-js="button-bookmark" class="Button--bookmark">
+          <img
+            data-js="button-image"
+            src="./images/bookmark-regular.svg"
+            alt=""
+            width="30"
+            height="30"
+          />
+        </button>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo
+          consectetur est placeat sit minima magnam officia provident eaque
+          nostrum ullam a alias harum illum enim, velit architecto tempora
+          necessitatibus amet.
+        </p>
+        <button class="Button--show-answer mlr-auto" data-js="show-answer">
+          show answer
+        </button>
+        <p class="Card__answer-hide" data-js="hide-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque,
+          aliquid ea. Inventore illo rem optio ipsa, quas, at qui, eligendi nemo
+          odit error rerum reprehenderit omnis id cum. Corrupti, libero!
+        </p>
+        <ul class="Card__list">
+          <li class="Card__tag">tag 1</li>
+          <li class="Card__tag">tag 2</li>
+          <li class="Card__tag">tag 3</li>
+          <li class="Card__tag">tag 4</li>
+        </ul>
+      </article>
+
+      <article class="mlr-auto mt-40 Card__container" data-js="card">
+        <h2>Question:</h2>
+        <button data-js="button-bookmark" class="Button--bookmark">
+          <img
+            data-js="button-image"
+            src="./images/bookmark-regular.svg"
+            alt=""
+            width="30"
+            height="30"
+          />
+        </button>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo
+          consectetur est placeat sit minima magnam officia provident eaque
+          nostrum ullam a alias harum illum enim, velit architecto tempora
+          necessitatibus amet.
+        </p>
+        <button class="Button--show-answer mlr-auto" data-js="show-answer">
+          show answer
+        </button>
+        <p class="Card__answer-hide" data-js="hide-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque,
+          aliquid ea. Inventore illo rem optio ipsa, quas, at qui, eligendi nemo
+          odit error rerum reprehenderit omnis id cum. Corrupti, libero!
+        </p>
+        <ul class="Card__list">
+          <li class="Card__tag">tag 1</li>
+          <li class="Card__tag">tag 2</li>
+          <li class="Card__tag">tag 3</li>
+          <li class="Card__tag">tag 4</li>
+        </ul>
+      </article>
+    </main>
+
+    <!-- create-page -->
+
+    <main class=".App-grid__scrollarea h-100vh hidden" data-page="create">
       <form class="ml-10" autocomplete="off" aria-labelledby="#create-question">
         <section data-js="form">
-          <label for="question" class="form__label">Question:</label>
+          <label for="question" class="Form__label">Question:</label>
           <textarea
             maxlength="200"
-            class="form__input"
+            class="Form__input"
             data-js="textarea-User"
             id="question"
             cols="30"
@@ -160,50 +167,52 @@
             placeholder="add question"
             required
           ></textarea>
-          <p class="form--counter">
+          <p class="Form--counter">
             <output data-js="counter">200</output> letters left
           </p>
         </section>
         <section data-js="form">
-          <label for="answer" class="form__label">Answer:</label>
+          <label for="answer" class="Form__label">Answer:</label>
           <textarea
             maxlength="200"
-            class="form__input"
+            class="Form__input"
             data-js="textarea-User"
             id="answer"
             rows="5"
             placeholder="add answer"
             required
           ></textarea>
-          <p class="form--counter">
+          <p class="Form--counter">
             <output data-js="counter">200</output> letters left
           </p>
         </section>
-        <label for="tags" class="form__label">Tags:</label>
+        <label for="tags" class="Form__label">Tags:</label>
         <input
-          class="form__input form__input--block"
+          class="Form__input Form__input--block"
           id="tags"
           type="text"
           placeholder="Add tags divided by comma"
           required
         />
-        <input class="mlr-auto form--submit" type="submit" value="submit" />
+        <input class="mlr-auto Form--submit" type="submit" value="submit" />
       </form>
     </main>
 
+    <!-- profile_page -->
+
     <main
-      class="app-grid__scrollarea h-100vh w-80 mlr-auto"
-      data-js="profile-page"
+      class=".App-grid__scrollarea h-100vh w-80 mlr-auto"
+      data-page="profile"
     >
-      <figure class="profile-content__user mlr-0">
+      <figure class="Profile-content__user mlr-0">
         <img
-          class="profile-content__profile-picture"
+          class="Profile-content__profile-picture"
           src="https://source.unsplash.com/random/300x300"
           alt="profile picture"
           width="150"
           height="150"
         />
-        <figcaption class="profile-content__profile-name">Name</figcaption>
+        <figcaption class="Profile-content__profile-name">Name</figcaption>
       </figure>
       <p>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro quam
@@ -211,47 +220,51 @@
         Voluptatum perspiciatis doloremque vitae at nemo iste repellat excepturi
         porro!
       </p>
-      <h2 class="profile-content--headings">skills</h2>
-      <ul class="profile-content__list">
-        <li class="profile-content__tag">tag1</li>
-        <li class="profile-content__tag">tag2</li>
-        <li class="profile-content__tag">tag3</li>
-        <li class="profile-content__tag">tag3</li>
+      <h2 class="Profile-content--headings">skills</h2>
+      <ul class="Profile-content__list">
+        <li class="Profile-content__tag">tag1</li>
+        <li class="Profile-content__tag">tag2</li>
+        <li class="Profile-content__tag">tag3</li>
+        <li class="Profile-content__tag">tag3</li>
       </ul>
-      <button class="profile-content--logout mlr-auto">LOGOUT</button>
+      <button class="Profile-content--logout mlr-auto" data-js="logout">
+        LOGOUT
+      </button>
     </main>
 
-    <nav class="nav__container" data-js="navigation">
-      <button class="nav__icon" data-js="home">
+    <!-- Navigation -->
+
+    <nav class="Nav__container" data-js="navigation">
+      <button class="Nav__icon" data-nav="home">
         <img
-          class="nav__picture"
+          class="Nav__picture"
           src="./images/home-solid.svg"
           alt=""
           width="40"
           height="40"
         />
       </button>
-      <button class="nav__icon" data-js="bookmark">
+      <button class="Nav__icon" data-nav="bookmark">
         <img
-          class="nav__picture"
+          class="Nav__picture"
           src="./images/bookmark-regular.svg"
           alt=""
           width="40"
           height="40"
         />
       </button>
-      <button class="nav__icon" data-js="create">
+      <button class="Nav__icon" data-nav="create">
         <img
-          class="nav__picture"
+          class="Nav__picture"
           src="./images/align-center-solid.svg"
           alt=""
           width="40"
           height="40"
         />
       </button>
-      <button class="nav__icon nav__icon--active" data-js="profile">
+      <button class="Nav__icon Nav__icon--active" data-nav="profile">
         <img
-          class="nav__picture"
+          class="Nav__picture"
           src="./images/user-circle-solid.svg"
           alt=""
           width="40"

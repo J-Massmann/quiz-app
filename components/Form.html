@@ -1,0 +1,42 @@
+<form class="ml-10" autocomplete="off" aria-labelledby="#create-question">
+  <section data-js="form">
+    <label for="question" class="Form__label">Question:</label>
+    <textarea
+      maxlength="200"
+      class="Form__input"
+      data-js="textarea-User"
+      id="question"
+      cols="30"
+      rows="5"
+      placeholder="add question"
+      required
+    ></textarea>
+    <p class="Form--counter">
+      <output data-js="counter">200</output> letters left
+    </p>
+  </section>
+  <section data-js="form">
+    <label for="answer" class="Form__label">Answer:</label>
+    <textarea
+      maxlength="200"
+      class="Form__input"
+      data-js="textarea-User"
+      id="answer"
+      rows="5"
+      placeholder="add answer"
+      required
+    ></textarea>
+    <p class="Form--counter">
+      <output data-js="counter">200</output> letters left
+    </p>
+  </section>
+  <label for="tags" class="Form__label">Tags:</label>
+  <input
+    class="Form__input Form__input--block"
+    id="tags"
+    type="text"
+    placeholder="Add tags divided by comma"
+    required
+  />
+  <input class="mlr-auto Form--submit" type="submit" value="submit" />
+</form>

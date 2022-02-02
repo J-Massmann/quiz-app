@@ -1,4 +1,4 @@
-.nav__container {
+.Nav__container {
   display: grid;
   grid-template-columns: repeat(4, 25%);
   position: fixed;
@@ -10,16 +10,16 @@
   background-color: lightgray;
 }
 
-.nav__icon {
+.Nav__icon {
   border: 1px solid black;
   position: relative;
 }
 
-.nav__icon--active {
+.Nav__icon--active {
   background-color: gray;
 }
 
-.nav__picture {
+.Nav__picture {
   position: absolute;
   top: 0;
   bottom: 0;

@@ -1,18 +1,18 @@
-.profile-content__user {
+.Profile-content__user {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 15px;
 }
 
-.profile-content__profile-picture {
+.Profile-content__profile-picture {
   border-radius: 50%;
 }
 
-.profile-content__profile-name {
+.Profile-content__profile-name {
   align-self: center;
 }
 
-.profile-content__list {
+.Profile-content__list {
   list-style: none;
   display: flex;
   justify-content: space-around;
@@ -20,7 +20,7 @@
   padding-left: 0;
 }
 
-.profile-content__tag {
+.Profile-content__tag {
   border: 0.5px solid black;
   border-radius: 10px;
   padding: 5px;
@@ -28,7 +28,7 @@
   background: var(--color-slightgray);
 }
 
-.profile-content--logout {
+.Profile-content--logout {
   display: block;
   width: fit-content;
   font-size: 1.3em;

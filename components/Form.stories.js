@@ -1,4 +1,4 @@
-import html from './form.html';
+import html from './Form.html';
 
 export default {
   title: 'Components/form',

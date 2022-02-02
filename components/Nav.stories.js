@@ -1,4 +1,4 @@
-import html from './nav.stories.html';
+import html from './Nav.stories.html';
 
 export default {
   title: 'Components/nav',
