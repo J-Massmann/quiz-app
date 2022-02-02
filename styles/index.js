@@ -22,6 +22,6 @@ import Heading from '../js/Heading.js';
 
 Heading();
 
-import Logout from '../js/Profile.js';
+import Logout from '../js/Logout_button.js';
 
 Logout();

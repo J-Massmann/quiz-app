@@ -4,6 +4,7 @@
   padding: 0 10px 10px 10px;
   position: relative;
   background-color: var(--color-light-gray);
+  border-radius: 15px;
 }
 
 .card__container:last-child {
