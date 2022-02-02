@@ -1,8 +1,8 @@
-.app-grid {
+.App-grid {
   display: grid;
   grid-template-rows: 48px 1fr 48px;
 }
 
-.app-grid__scrollarea {
+.App-grid__scrollarea {
   overflow-y: auto;
 }

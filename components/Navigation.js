@@ -13,12 +13,12 @@ export default function Nav() {
       );
       currentPage.classList.remove('hidden');
       allButtons.forEach(button => {
-        button.classList.remove('nav__icon--active');
+        button.classList.remove('Nav__icon--active');
       });
       const currentButton = document.querySelector(
         `[data-nav="${buttonAttribute}"]`
       );
-      currentButton.classList.add('nav__icon--active');
+      currentButton.classList.add('Nav__icon--active');
     });
   });
 }

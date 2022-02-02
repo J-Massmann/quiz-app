@@ -1,4 +1,4 @@
-import html from './card.stories.html';
+import html from './Card.stories.html';
 
 export default {
   title: 'Components/card',

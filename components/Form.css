@@ -1,4 +1,4 @@
-.form__label {
+.Form__label {
   margin-top: 15px;
   margin-bottom: 5px;
   font-size: 1.5rem;
@@ -6,13 +6,13 @@
   display: block;
 }
 
-.form__input {
+.Form__input {
   background-color: var(--color-light-gray);
   width: 80%;
   display: block;
 }
 
-.form--submit {
+.Form--submit {
   width: fit-content;
   font-size: 1.3em;
   font-weight: 700;
@@ -24,7 +24,7 @@
   display: block;
 }
 
-.form--counter {
+.Form--counter {
   color: gray;
   margin-top: 5px;
   display: block;

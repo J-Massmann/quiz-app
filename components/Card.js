@@ -18,10 +18,10 @@ export default function Card(cardElement) {
 
   showAnswer.addEventListener('click', () => {
     if (showAnswer.textContent.trim() === 'show answer') {
-      textElement.classList.remove('card__answer-hide');
+      textElement.classList.remove('Card__answer-hide');
       showAnswer.textContent = 'hide answer';
     } else {
-      textElement.classList.add('card__answer-hide');
+      textElement.classList.add('Card__answer-hide');
       showAnswer.textContent = 'show answer';
     }
   });

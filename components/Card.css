@@ -1,4 +1,4 @@
-.card__container {
+.Card__container {
   border: 1px solid black;
   width: 80%;
   padding: 0 10px 10px 10px;
@@ -7,11 +7,11 @@
   border-radius: 15px;
 }
 
-.card__container:last-child {
+.Card__container:last-child {
   margin-bottom: 20px;
 }
 
-.card__list {
+.Card__list {
   list-style: none;
   display: flex;
   justify-content: space-around;
@@ -19,7 +19,7 @@
   padding-left: 0;
 }
 
-.card__tag {
+.Card__tag {
   border: 0.5px solid black;
   border-radius: 10px;
   padding: 5px;
@@ -27,6 +27,6 @@
   background: var(--color-slightgray);
 }
 
-.card__answer-hide {
+.Card__answer-hide {
   display: none;
 }
